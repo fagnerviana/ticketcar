@@ -1,0 +1,22 @@
+/* assets/css/cliente.css */
+.dashboard-cliente {
+    padding: 2rem;
+}
+
+.nav-cliente {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+.nav-cliente a {
+    color: #004aad;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-cliente a:hover {
+    background-color: #e2e6ea;
+    border-radius: 4px;
+}
