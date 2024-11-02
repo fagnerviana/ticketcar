@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatórios</title>
+</head>
+<body>
+    <h2>Gerar Relatórios</h2>
+    <form action="/admin/relatorios" method="GET">
+        <label for="tipo_relatorio">Tipo de Relatório:</label>
+        <select id="tipo_relatorio" name="tipo_relatorio">
+            <option value="diario">Diário</option>
+            <option value="semanal">Semanal</option>
+            <option value="mensal">Mensal</option>
+        </select>
+        <button type="submit">Gerar Relatório</button>
+    </form>
+
+    <h3>Relatórios Recentes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Data de Geração</th>
+                <th>Tipo</th>
+                <th>Período</th>
+                <th>Receita Total</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Lista de relatórios gerados -->
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciar Entradas e Saídas</title>
+</head>
+<body>
+    <h2>Registro de Entrada/Saída de Veículos</h2>
+    <form action="/admin/registrar-entrada" method="POST">
+        <label for="placa">Placa do Veículo:</label>
+        <input type="text" id="placa" name="placa" required>
+        <label for="data_entrada">Data e Hora de Entrada:</label>
+        <input type="datetime-local" id="data_entrada" name="data_entrada" required>
+        <button type="submit">Registrar Entrada</button>
+    </form>
+
+    <h3>Saída de Veículo</h3>
+    <form action="/admin/registrar-saida" method="POST">
+        <label for="placa_saida">Placa do Veículo:</label>
+        <input type="text" id="placa_saida" name="placa_saida" required>
+        <button type="submit">Registrar Saída</button>
+    </form>
+</body>
+</html>
