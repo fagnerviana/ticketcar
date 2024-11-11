@@ -1,4 +1,8 @@
 /* Estilos para index.html - Adicione ao style.css ou crie um index.css */
+* {
+    box-sizing: border-box;
+  }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -7,9 +11,11 @@ body {
 }
 
 header {
-    background-color: #004aad;
+    background-color: #771428;
     color: white;
-    padding: 2rem;
+    padding: 1rem;
+    width: 100%;
+    height: 500px;
     text-align: center;
 }
 
@@ -20,6 +26,11 @@ header h1 {
 
 header p {
     font-size: 1.1rem;
+}
+
+header div img{
+     width: 20rem;
+ 
 }
 
 .container {
@@ -81,3 +92,11 @@ footer {
     margin-top: 2rem;
     font-size: 0.9rem;
 }
+
+@media screen and (max-width: 1020px){
+    
+    .login-options{
+        flex-direction: column-reverse;
+    }
+}
+
