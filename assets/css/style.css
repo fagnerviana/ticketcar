@@ -20,7 +20,7 @@ header {
 }
 
 header .logo-ticketcar {
-    max-width: 150px; /* Define um tamanho adequado para a logo */
+    max-width: 250px; /* Define um tamanho adequado para a logo */
     margin-bottom: 1rem;
 }
 
@@ -34,6 +34,18 @@ header p {
     font-size: 1.2rem;
     line-height: 1.5;
     color: #101F29; /* Texto escuro no cabeçalho */
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    width: 400px;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Seção Central */
@@ -178,6 +190,13 @@ footer ul li a:hover {
     color: #3FCED1;
 }
 
+.galeria{
+    position: relative;
+    padding: 0; 
+}
+.mySlides{
+    display: none;
+}
 
 
 @media (max-width: 768px) {
