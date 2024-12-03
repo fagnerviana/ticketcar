@@ -1,0 +1,45 @@
+/* Estilização para o slideshow */
+.banner {
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden; /* Esconde partes externas */
+    width: 300px;    
+    margin-left: 40%;
+}
+
+.mySlides {
+    display: none; /* Esconde todos os slides inicialmente */
+    width: 50%;
+    animation: fade 1.5s ease; /* Transição suave entre os slides */
+}
+
+/* Efeito de fade para a transição */
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 200px; /* Reduz a altura */
+    }
+
+    .mySlides {
+        max-width: 80%; /* Reduz a largura máxima da imagem */
+    }
+
+    .prev, .next {
+        font-size: 1rem; /* Reduz o tamanho das setas */
+        padding: 0.3rem;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px; /* Reduz o tamanho das bolinhas */
+    }
+}
+

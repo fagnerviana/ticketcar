@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo ao Sistema de Estacionamento</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slideshow.css">
+    <script src="assets/js/slideshow.js" defer></script>
+
 </head>
 <body>
     <header>
         <div class="container">
             <img  class="logo-ticketcar" src="assets/img/ticketcar-sem-fundo.png">
+            <span id="menu" class="material-symbols-outlined">
+                menu
+                </span>
             <nav class="menu-acao">
                 <ul>
                     <li><a href="#benefits">Benefícios</a></li>
@@ -23,7 +30,14 @@
         <p>Facilite o controle de entrada, saída e pagamentos de clientes e veículos.</p>
     </header>
 
-    <main class="container">    
+    <!-- Banner -->
+    <div class="banner">
+        <img class="mySlides cruzeiro-wallpaper" src="assets/img/plano1.png" style="width:100%">
+        <img class="mySlides cruzeiro-wallpaper" src="assets/img/plano2.png" style="width:100%">
+        <img class="mySlides cruzeiro-wallpaper" src="assets/img/plano3.png" style="width:100%">
+    </div>
+  
+     <main class="container">    
 
         <!-- Seção de Benefícios ou Recursos -->
     <section id="benefits" class="benefits">
@@ -52,30 +66,6 @@
         </div>
     </section>
 
-    <section id="planos" class="planos">
-        <div class="galeria-planos">
-             <!-- Full-width images with number text -->
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-      <img src="assets/img/mensalidade-um.png" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-      <img src="public/img_5terre_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-      <img src="public/img_mountains_wide.jpg" style="width:100%">
-  </div>
-
-
-        </div>
-
-
-    </section>
-
     <section class="intro">
         <p>Escolha a sua opção de login para acessar o sistema:</p>
     </section>
@@ -83,12 +73,12 @@
             <div class="login-box">
                 <h2>Login de Administrador</h2>
                 <p>Acesse o painel de administração para gerenciar entradas e saídas, clientes, pagamentos, e relatórios.</p>
-                <a href="pages/login.html" class="btn">Entrar como Administrador</a>
+                <a href="view/admin/loginadmin.html" class="btn">Entrar como Administrador</a>
             </div>
             <div class="login-box">
                 <h2>Login de Cliente</h2>
                 <p>Acesse sua conta de cliente para ver histórico de veículos, pagamentos e muito mais.</p>
-                <a href="pages/cliente/login.html" class="btn">Entrar como Cliente</a>
+                <a href="view/login.html" class="btn">Entrar como Cliente</a>
             </div>
         </section>
         <!-- Seção de Chamada para Ação -->

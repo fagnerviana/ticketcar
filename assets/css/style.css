@@ -194,8 +194,25 @@ footer ul li a:hover {
     position: relative;
     padding: 0; 
 }
-.mySlides{
-    display: none;
+.banner {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden; /* Esconde partes externas */
+}
+
+.mySlides {
+    display: none; /* Esconde todos os slides inicialmente */
+    width: 100%;
+    animation: fade 1.5s ease; /* Transição suave entre os slides */
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
